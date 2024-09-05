@@ -12,19 +12,37 @@
         bash
     ```
 
+    Aguardar um pouco e pressionar a tecla ENTER para liberar o terminal.
+
+
 2. Dentro do container, acessar a pasta ``/root/occlum-demo`` e criar um workspace do occlum por meio do comando:
 
-    ``occlum new occlum-workspace``
+    ```
+    cd occlum-demo
+    occlum new occlum-workspace
+    ```
 
-3. Acessar a pasta ``occlum-workspace`` recém criada e executar o seguinte comando:
+3. Acessar a pasta ``occlum-workspace`` recém criada e executar o comando dependendo da exprimentação a ser realizada:
 
-    Versão simulação (desprotegida):
+    - Versão simulação (desprotegida):
     ``../compile-SIM.sh``
 
-    Versão hardware (utiliza SGX):
+    - Versão hardware (utiliza SGX):
     ``../compile-HW.sh``
 
-4. Executar o programa ``app`` dentro do enclave criado pelo occlum por meio do comando:
+4. Abrir um novo terminal na máquina (**B**) e acessar a pasta ``occlum-demo``:
+
+    ``cd occlum-demo``
+
+
+5. No terminal **A**, executar o programa ``app`` dentro do enclave criado pelo occlum por meio do comando:
 
     ``occlum run /bin/app``
-    
+
+6. Antes que o programa finalize a executação, no terminal **B**, executar o programa ``dump.sh``:
+
+    ``./dump.sh``
+
+    Um arquivo de dump será gerado na pasta corrente.
+
+
