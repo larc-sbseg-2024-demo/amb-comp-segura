@@ -22,7 +22,7 @@
     occlum new occlum-workspace
     ```
 
-3. Acessar a pasta ``occlum-workspace`` recém criada e executar o comando dependendo da exprimentação a ser realizada:
+3. Acessar a pasta ``occlum-workspace`` recém criada e executar o comando dependendo da experimentação a ser realizada:
 
     - Versão simulação (desprotegida):
     ``../compile-SIM.sh``
