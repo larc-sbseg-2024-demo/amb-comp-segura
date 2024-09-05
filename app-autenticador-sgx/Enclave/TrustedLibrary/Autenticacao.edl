@@ -1,0 +1,19 @@
+enclave {
+    
+    /* 
+     * A subset of the C++03 standard is supported.
+     */
+
+    trusted {
+        /*
+         * Realizar soma de dois valores
+         */
+        public void ecall_sgx_autenticar([in, string]const char* usuario, [in, string]const char* senhaHash, [out] int* resultado);
+
+    };
+    
+    untrusted {
+        void ocall_autenticacao_sleep(unsigned int seconds);
+    };
+    
+};

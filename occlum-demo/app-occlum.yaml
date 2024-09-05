@@ -1,0 +1,10 @@
+includes:
+  - base.yaml
+excludes:
+  - .git
+  - .dockerignore
+targets:
+  - target: /bin
+    copy:
+    - files:
+      - ../app
