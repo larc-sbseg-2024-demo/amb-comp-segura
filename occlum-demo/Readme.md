@@ -18,9 +18,13 @@
 
 3. Acessar a pasta ``occlum-workspace`` recém criada e executar o seguinte comando:
 
-    ``../compile.sh``
+    Versão simulação (desprotegida):
+    ``../compile-SIM.sh``
+
+    Versão hardware (utiliza SGX):
+    ``../compile-HW.sh``
 
 4. Executar o programa ``app`` dentro do enclave criado pelo occlum por meio do comando:
 
-    ``occlum run bin/app``
+    ``occlum run /bin/app``
     
