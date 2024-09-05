@@ -20,13 +20,13 @@
 
 4) Executar o Database MongoDB
 
-    ``
+    ```
     docker run -d --rm --network host --name mongo-vitima  \
         -v ./mongo.init.js:/docker-entrypoint-initdb.d/mongo.init.js \
         -e MONGO_INITDB_ROOT_USERNAME=root \
         -e MONGO_INITDB_ROOT_PASSWORD=abcdef \
         mongo:6.0.14
-    ``
+    ```
 
 5) Executar o servidor de testes
 
