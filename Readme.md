@@ -1,5 +1,9 @@
 # Programas de Demonstração do minicurso "Ambientes de Computação Segura" - SBSeg 2024
 
+A seguir estão as instruções básicas para as demonstrações com ataques de 'dump' realizadas no minicurso.
+
+Os slides apresentados estão disponíveis no arquivo: [Minicurso-SBSeg2024-Apresentado.pdf](Minicurso-SBSeg2024-Apresentado.pdf)
+
 ## Preparação
 
 Inicialmente, verificar se possui o programa ``gcore`` instalado.
