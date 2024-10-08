@@ -1,0 +1,17 @@
+// Copyright (c) Open Enclave SDK contributors.
+// Licensed under the MIT License.
+
+enclave {
+    from "openenclave/edl/syscall.edl" import *;
+    from "platform.edl" import *;
+
+    trusted {
+        public void enclave_autenticar([in, string]const char* usuario, [in, string]const char* senhaHash, [out] int* resultado);
+    };
+
+    untrusted {
+        void host_sleep(unsigned int segundos);
+    };
+};
+
+

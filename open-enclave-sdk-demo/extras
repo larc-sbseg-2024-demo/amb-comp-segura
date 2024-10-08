@@ -1,0 +1,19 @@
+apt update
+apt install wget sudo gnupg gnupg2
+
+https://github.com/openenclave/openenclave/blob/master/docs/GettingStartedDocs/install_oe_sdk-Ubuntu_20.04.md
+- Sem ninja e CMake
+
+Usando o SDK:
+https://github.com/openenclave/openenclave/blob/master/docs/GettingStartedDocs/Linux_using_oe_sdk.md
+
+Obs.: no link acima há um comando 'source' para configurar as variáveis de ambiente.
+
+Compilar:
+make build
+
+Executar:
+make run
+
+Executar no modo simulação:
+./host/autenticador_host ./enclave/enclave.signed --simulate
