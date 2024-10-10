@@ -39,7 +39,7 @@
 
     ``occlum run /bin/app``
 
-6. Antes que o programa finalize a execução, no terminal **B**, executar o programa ``dump.sh``:
+6. Antes que o programa finalize a execução, no terminal **B**, executar o programa ``dump.sh`` (com permissões de ``root``):
 
     ``./dump.sh``
 
